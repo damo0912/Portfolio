@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Designing Projects</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:black;
+    color:white;
+}
+header{
+    text-align:center;
+    padding:40px;
+    font-size:35px;
+    font-weight:bold;
+}
+
+/* Grid for project images */
+.projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+    padding:40px;
+}
+
+/* Project cards */
+.project-card{
+    position: relative;
+    cursor: pointer;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #333;
+    transition: transform 0.3s;
+}
+.project-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border-radius:15px;
+}
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+/* Lightbox overlay */
+#lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.9);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:1000;
+}
+#lightbox img{
+    max-width:90%;
+    max-height:80%;
+    border-radius:10px;
+}
+#lightbox span{
+    position:absolute;
+    top:20px;
+    right:40px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<header>Graphics Designs</header>
+
+<div class="projects">
+    <div class="project-card"><img src="Devils .png" alt="Project 1"></div>
+    <div class="project-card"><img src="PIZZA.png" alt="Project 2"></div>
+    <div class="project-card"><img src="Redbull.png" alt="Project 3"></div>
+    <div class="project-card"><img src="Womens day poster.png" alt="Project 4"></div>
+     <div class="project-card"><img src="Election-Poster - Copy.png" alt="Project 5"></div>
+    <div class="project-card"><img src="Trio-Poster - Copy.png" alt="Project 6"></div>
+    <div class="project-card"><img src="JASPRIT  BUMRAH.png" alt="Project 7"></div>
+    <div class="project-card"><img src="Happy Holi.png" alt="Project 8"></div>
+     <div class="project-card"><img src="Balen as a pm.png" alt="Project 1"></div>
+
+
+</div>
+<h1 align="center">“Fresh projects arriving soon — don’t miss out!”</h1>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <img src="" alt="Big Image">
+</div>
+
+<script>
+// Lightbox JS
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox.querySelector('img');
+const closeBtn = document.getElementById('close');
+
+document.querySelectorAll('.project-card img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', e => {
+    if(e.target === lightbox){
+        lightbox.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>

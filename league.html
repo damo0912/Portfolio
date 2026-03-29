@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Jerseys - Himalayan Jerseys</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-box"><img src="LOGO.png" alt="Logo" class="img-fluid"></div>
+                Himalayan Jerseys
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Jerseys
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="country.html">Country Jerseys</a></li>
+                            <li><a class="dropdown-item" href="league.html">League Jerseys</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saved.html">Saved Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-login" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>League Jerseys</h1>
+            <p>Browse cricket jerseys from popular T20 leagues worldwide</p>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Mumbai Indians.png" alt="Scotland Jersey 2024" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Mumbai Indians IPL</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Chennai Super Kings.jpg" alt="Scotland Jersey 2024" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Chennai Super Kings</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Royal Challengers.jpg" alt="Royal Challengers Jersey" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Royal Challengers</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Kolkata Knight Riders.jpg" alt="Kolkata Knight Riders Jersey" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Kolkata Knight Riders</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="ss.png" alt="Sydney Sixers BBL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Sydney Sixers BBL</h5>
+                            <p class="price">Rs. 2,700</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Melbourne Stars BBL.png" alt="Melbourne Stars BBL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Melbourne Stars BBL</h5>
+                            <p class="price">Rs. 2,700</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Lahore Qalandars PSL.png" alt="Lahore Qalandars PSL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Lahore Qalandars PSL</h5>
+                            <p class="price">Rs. 2,600</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Islamabad United PSL.png" alt="Islamabad United PSL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Islamabad United PSL</h5>
+                            <p class="price">Rs. 2,600</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Trinbago Knight Riders.png" alt="Trinbago Knight Riders" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Trinbago Knight Riders</h5>
+                            <p class="price">Rs. 2,500</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Jamaica Tallawahs CPL.png" alt="Jamaica Tallawahs CPL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Jamaica Tallawahs CPL</h5>
+                            <p class="price">Rs. 2,500</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Northern Superchargers.png" alt="Northern Superchargers" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Northern Superchargers</h5>
+                            <p class="price">Rs. 2,600</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="London Spirit.png" alt="London Spirit" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>London Spirit</h5>
+                            <p class="price">Rs. 2,600</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Sunrisers Hyderabad.png" alt="Sunrisers Hyderabad" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Sunrisers Hyderabad</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Delhi Capitals IPL.png" alt="Delhi Capitals IPL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Delhi Capitals IPL</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Punjab Kings IPL.png" alt="Punjab Kings IPL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Punjab Kings IPL</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product-card">
+                        <div class="product-image"><img src="Rajasthan Royals IPl.png" alt="Rajasthan Royals IPL" class="img-fluid"></div>
+                        <div class="product-info">
+                            <h5>Rajasthan Royals IPL</h5>
+                            <p class="price">Rs. 2,800</p>
+                            <button class="btn btn-sm btn-dark w-100 mb-2" onclick="addToCart(this)">Add to Cart</button>
+                            <button class="btn btn-sm btn-outline-dark w-100" onclick="saveItem(this)">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Himalayan Jerseys</h5><br>
+                    <p>Your destination for authentic cricket jerseys</p><br>
+                    <p>Established 2025</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li><br>
+                        <li><a href="about.html">About Us</a></li><br>
+                        <li><a href="country.html">Country Jerseys</a></li><br>
+                        <li><a href="league.html">League Jerseys</a></li><br>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5><br>
+                    <p>Email: info@himalayanjerseys.com</p><br>
+                    <p>Phone: +977-9744590912</p><br>
+                    <p>Location: Kathmandu, Nepal</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-get-in-touch">
+            <ul>
+            <li>Get in touch with us for more information or special orders.</li><br><br><br>
+            <li>Follow Us in</li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61585354236554"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/himalayan_jerseys/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@himalayan_jerseys"><i class="bi bi-tiktok"></i></a>
+
+        </div>
+         <div class="text-center mt-3">
+                <p>&copy; 2025 Himalayan Jerseys. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

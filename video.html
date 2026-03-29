@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Projects</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:black;
+    color:white;
+}
+header{
+    text-align:center;
+    padding:40px;
+    font-size:35px;
+    font-weight:bold;
+}
+
+/* Grid for videos */
+.videos{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
+    padding:40px;
+}
+
+/* Video cards */
+.video-card{
+    position: relative;
+    cursor: pointer;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #333;
+    transition: transform 0.3s;
+}
+.video-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+    border-radius:15px;
+}
+.video-card:hover{
+    transform:scale(1.05);
+}
+
+/* Lightbox overlay */
+#lightbox{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.95);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    z-index:1000;
+    padding:20px;
+}
+#lightbox video{
+    max-width:90%;
+    max-height:80%;
+    border-radius:10px;
+    background:black;
+}
+#lightbox span{
+    position:absolute;
+    top:20px;
+    right:40px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<header>Video Projects In Progress 🎬</header>
+<!-- 
+<div class="videos">
+    <div class="video-card" data-video="videos/video1.mp4">
+        <img src="images/video1-thumb.jpg" alt="Video 1">
+        <div style="text-align:center; padding:10px;">Project 1</div>
+    </div>
+
+    <div class="video-card" data-video="videos/video2.mp4">
+        <img src="images/video2-thumb.jpg" alt="Video 2">
+        <div style="text-align:center; padding:10px;">Project 2</div>
+    </div>
+
+    <div class="video-card" data-video="videos/video3.mp4">
+        <img src="images/video3-thumb.jpg" alt="Video 3">
+        <div style="text-align:center; padding:10px;">Project 3</div>
+    </div>
+
+    <div class="video-card" data-video="videos/video4.mp4">
+        <img src="images/video4-thumb.jpg" alt="Video 4">
+        <div style="text-align:center; padding:10px;">Project 4</div>
+    </div>
+</div>
+
+<!-- Video Lightbox -->
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <video controls autoplay></video>
+</div>
+
+<script>
+// Video Lightbox JS
+const lightbox = document.getElementById('lightbox');
+const lightboxVideo = lightbox.querySelector('video');
+const closeBtn = document.getElementById('close');
+
+document.querySelectorAll('.video-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const videoSrc = card.getAttribute('data-video');
+        lightboxVideo.src = videoSrc;
+        lightbox.style.display = 'flex';
+        lightboxVideo.play();
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightboxVideo.pause();
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', e => {
+    if(e.target === lightbox){
+        lightboxVideo.pause();
+        lightbox.style.display = 'none';
+    }
+}); -->
+</script>
+
+</body>
+</html>
